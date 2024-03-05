@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+select,
+input,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  height: 80px;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: violet;
+  transition: color 0.4s;
+}
+
+header #navbar .hamburguer-menu img {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  header #navbar .hamburguer-menu img {
+    display: block;
+  }
+  header #navbar .nav-list {
+    display: none;
+  }
+}
+
+/* ------------------------fim do header ------------------------ */
+/* Section Banner */
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  /*essa parte separa a foto e texto daca uma via pra um canto*/
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+main #banner .banner-content .banner-content-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+main #banner .banner-content .banner-content-subtitle {
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 300px;
+  color: rgb(53, 72, 194);
+  margin-bottom: 38px;
+}
+
+main #banner .banner-content .banner-content-btn {
+  background-color: #00a8cc;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
+}
+
+main #banner .banner-image {
+  border-radius: 50%;
+  width: 80%;
+  height: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main #banner .banner-content {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+  }
+}
+
+/* Section Posts */
+section#posts {
+  margin-top: 71px;
+  background-color: #edf7fa;
+}
+
+#posts .post-content {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+#posts .post-content .post-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#posts .post-content .post-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#posts .post-content .post-content-header .view-all-link {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+#posts .post-content .posts-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+#posts .post-content .posts-cards .post-card {
+  background-color: white;
+  padding: 24px;
+}
+
+#posts .post-content .posts-cards .post-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+#posts .post-content .posts-cards .post-card span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 720px) {
+  main #posts .post-content .posts-cards {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 720px) {
+  main .banner-content-title {
+    display: inline-block;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  main .banner-content-subtitle {
+    display: inline;
+  }
+}
